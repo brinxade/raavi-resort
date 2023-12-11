@@ -1,0 +1,90 @@
+.button {
+    display: inline-block;
+    color: $white;
+    font-size: $text-s;
+    text-decoration: none !important;
+    transition: background-color $ms-color, color $ms-color;
+    padding: 14px 40px;
+    display: inline-block;
+    border-radius: 50px;
+    text-align: center;
+    border: 2px solid $white;
+    font-family: $font-secondary;
+    cursor: pointer;
+}
+
+.button.form-submit {
+    margin-top: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.button-primary {
+    background: $primary;
+    border-color: transparent;
+    &:hover { border-color: white; }
+}
+
+.button-secondary {
+    background-color: $accent;
+    color: $white;
+    font-weight: bold;
+    &:hover { background-color: darken($accent, 5%); color: $white; }
+}
+
+.button-tertiary { 
+    width: 100%; 
+    color: $accent; 
+    font-family: $font-secondary; 
+
+    &:hover { text-decoration: underline !important; }
+}
+
+.fieldgroup {
+    margin-bottom: 20px;
+
+    label span { display: inline-block; margin-bottom: 5px; font-family: $font-secondary; }
+}
+
+.form-title {
+    margin-bottom: 30px;
+}
+
+.subtitle {
+    font-family: $font-primary;
+    font-weight: normal;
+    font-size: $text-l;
+    margin-bottom: -10px;
+}
+
+.link { font-weight: bold; color: $primary; }
+
+/* Inputs */
+input[type='text'], input[type='email'], input[type='date'], input[type='password'], select, textarea { font-size: 16px; background-color: rgba(0, 0, 0, 0.075); border-radius: 10px; border: 2px solid transparent; outline: none; padding: 10px; width: 100%; min-width: 270px; font-weight: bold; }
+input[type='text']:focus, input[type='email']:focus, input[type='date']:focus, input[type='password']:focus, select:focus, textarea:focus { border-color: $primary; }
+input[type='text']::placeholder, input[type='email']::placeholder, input[type='date']::placeholder, input[type='password']::placeholder, select::placeholder, textarea::placeholder { color: rgba(0, 0, 0, 0.3); }
+
+textarea { min-height: 120px; height: 150px; }
+
+input[type='checkbox'] { width: 22px; height: 22px; margin-right: 10px; }
+.checkbox-wrapper { display: flex; align-items: center; }
+
+/* Widget: Image Content */
+.image-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > * {
+        /* padding: $padding-l; */
+    }
+
+    > .content {
+        max-width: 700px;
+    }
+
+    > .image-wrapper {
+        min-width: 35%;
+        width: 45%;
+    }
+}

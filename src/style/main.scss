@@ -1,0 +1,242 @@
+@import "variables";
+@import "reset";
+@import "ui";
+
+#site-header {
+    position: relative;
+    z-index: 99999;
+    $nav-spacing: 25px;
+    align-items: center;
+    background-color: $accent;
+    color: $white;
+    font-size: $text-l;
+    font-family: $font-secondary;
+    
+    &.water-effect { 
+        margin-bottom: -30px; 
+        > .inner { transform: translateY(30%); }
+    }
+    &.header-transparent { background-color: transparent; transform: translateY(30%); }
+
+    .header-ext {
+        background-color: $white;
+    }
+
+    > .inner {
+        position: relative;
+        padding: 12px $base-padding;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    nav a:not(.button) {
+        padding: 5px 0;
+
+        &:hover { text-decoration: none; border-bottom: 2px solid white; }
+    }
+
+    .nav-left {
+        margin-right: auto;
+
+        nav a { margin-right: $nav-spacing; }
+    }
+
+    .nav-right {
+        margin-left: auto;
+
+        nav a { margin-left: $nav-spacing; }
+    }
+}
+
+
+#site-footer {
+    position: relative;
+    background-color: #222;
+    margin-top: 160px;
+
+    .upper {
+        max-width: $screen-size-large;
+        margin: 0 auto;
+        padding: $base-padding;
+    }
+
+    .lower { background-color: #444; }
+    .lower > .inner {
+        padding: 20px;
+        color: #fff;
+        display: flex;
+        align-items: center;
+
+        & > * { margin: 0; }
+
+        .logo {
+            margin-right: 40px;
+        }
+
+        nav a { margin-right: 15px; color: $neutral-mid; }
+
+        .social-tray a { 
+            color: $primary; 
+
+            &:hover { color: lighten($primary, 25%); }
+        }
+    }
+
+}
+
+#subscribe-newsletter {
+    position: relative;
+    max-width: 830px;
+    top: -80px;
+    background-color: white;
+    padding: 40px 40px;
+    border-radius: 14px;
+    margin-bottom: -40px;
+
+    .thumbnail-wrapper img {
+        max-width: 220px;
+        fill: green;
+        margin: -30px 0 -40px 0 !important;
+    }
+
+    input:focus { border-color: $primary; }
+}
+
+#booking-form {
+    padding: $base-padding;
+    
+    .inner {
+        display: grid;
+        grid-template-columns: minmax(300px, 1fr) minmax(300px, 1fr);
+        gap: 0 40px;
+        max-width: 600px;
+    }
+}
+
+.logo {
+
+    img {
+        max-width: 120px;
+        margin-top: 6px;
+    }
+
+    &.logo-text {
+        font-family: Sketch;
+        font-size: 112px;
+        font-weight: normal;
+    }
+
+}
+
+.auth-wrapper {
+    display: flex;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .side-content {
+        width: 100%;
+        background-color: $primary;
+        padding: $base-padding;
+    }   
+
+    .main-content {
+        position: relative;
+        min-width: 600px;
+        background-color: #eee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $base-padding;
+
+        .close {
+            position: absolute;
+            right: 0;
+            top: 0;
+            padding: 60px;
+            font-size: 46px;
+            line-height: 0;
+        }
+    }
+}
+
+.page-home {
+
+    .hero-section {
+        position: relative;
+        background-color: $accent;
+        background-image: url(../images/resort/outdoor-1-transformed.jpeg);
+        background-size: cover;
+        background-position: center;
+        margin-bottom: -65px;
+        padding-bottom: 140px;
+        padding-top: 120px;
+        margin-top: -100px;
+        color: $white;
+    
+        >.image-content {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .section-separator {
+        position: absolute;
+        min-height: 100px;
+        background-image: url(../images/waves-white.svg);
+        bottom: 0;
+        z-index: 5;
+        width: 100%;
+    }
+
+}
+
+.page-booking {
+    
+
+}
+
+#events-showcase .image-content-container {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 35px;
+
+    .image-content {
+        border-radius: 10px;
+
+        img { border-radius: 10px; }
+    }
+
+}
+
+#testimonials-showcase {
+
+    .testimonial-container {
+        background-color: #eee;
+        padding: 40px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+    }
+
+    .title-wrapper {
+        margin-right: 70px;
+    }
+
+    .testimonial {
+        max-width: 360px;
+
+        .testimonial-header { margin-bottom: 20px; display: flex; align-items: stretch;}
+        .author { display: flex; flex-direction: column; justify-content: flex-start; }
+        .author-rating { margin-bottom: -5px; }
+        .author-pfp { background: #ccc; width: 75px; height: 75px; border-radius: 100px; margin-right: 20px; }
+        .author-name { font-weight: bold; }
+        .author-job { color: #888; margin-top: auto; }
+    }
+
+}
