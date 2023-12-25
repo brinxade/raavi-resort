@@ -9,6 +9,8 @@ import ServicesPage from 'pages/ServicesPage';
 import CookiePolicyPage from 'pages/CookiePolicyPage';
 import PrivacyPolicyPage from 'pages/PrivacyPolicyPage';
 import ContactPage from 'pages/ContactPage';
+import BlankLayout from 'layouts/BlankLayout';
+import ComingSoonPage from 'pages/ComingSoonPage';
 
 function App() {
 
@@ -21,15 +23,7 @@ function App() {
 	return (
 		<div>
 			<Routes>
-				
-				<Route path="/" element={<AppHeroLayout><HomePage/></AppHeroLayout>}></Route>
-				<Route path="/booking" element={<AppLayout><BookingPage/></AppLayout>}></Route>
-				<Route path="/services" element={<AppLayout><ServicesPage/></AppLayout>}></Route>
-				<Route path="/contact" element={<AppLayout><ContactPage/></AppLayout>}></Route>
-				<Route path="/about" element={<AppLayout><AboutPage/></AppLayout>}></Route>
-
-				<Route path="/policy/cookies" element={<AppLayout><CookiePolicyPage/></AppLayout>}></Route>
-				<Route path="/policy/privacy" element={<AppLayout><PrivacyPolicyPage/></AppLayout>}></Route>
+				<Route path="/" element={<BlankLayout><ComingSoonPage/></BlankLayout>}></Route>
 			</Routes>
 		</div>
 	)
