@@ -1,9 +1,10 @@
 import config from "config";
-import imgHero from "images/party.svg";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import imgPlaceholder from "images/placeholder-image.png";
 import imgStars from "images/stars.png";
+import imgEventFamily from "images/resort/event-family.jpg";
+import imgEventBusiness from "images/resort/event-business.jpg";
+import imgReview from "images/review.png";
 
 function HomePage() {
 
@@ -15,7 +16,7 @@ function HomePage() {
         <div className="page page-home">
             <div className="hero-section">
 
-                <div className="image-content ss-3">
+                <div className="image-content ss-3 base-padding">
                     <div className="content">
                         <h3 className="subtitle">Moments. Bliss. Happiness.</h3>
                         <h1 className="title">Raavi Resort</h1>
@@ -38,9 +39,9 @@ function HomePage() {
                 <h2 className="text-xl mb-5">A Place For You, and Your People</h2>
 
                 <div className="image-content-container">
-                    <div className="image-content ss-3">
+                    <div className="image-content">
                         <div className="image-wrapper">
-                            <img src={imgPlaceholder}/>
+                            <img src={imgEventFamily} alt="A family event"/>
                         </div>
                         <div className="content">
                             <h3 className="title">Family Events</h3>
@@ -55,9 +56,9 @@ function HomePage() {
                         </div>
                     </div>
 
-                    <div className="image-content ss-3">
+                    <div className="image-content">
                         <div className="image-wrapper">
-                            <img src={imgPlaceholder}/>
+                            <img src={imgEventBusiness} alt="A business event"/>
                         </div>
                         <div className="content">
                             <h3 className="title">Business Events</h3>
@@ -77,11 +78,12 @@ function HomePage() {
             <div id="testimonials-showcase" className="section ss-3 base-padding">
                 <div className="testimonial-container">
                     <div className="title-wrapper">
+                        <img className="image" src={imgReview} alt="Icon depicting people leaving reviews"/>
                         <h3 className="text-m">
                             Here&apos;s what people say about us!
                         </h3>
                         <p>
-                            Success Begins & Ends with Satisfied Clients
+                            Success begins & ends with satisfied clients.
                         </p>
                     </div>
 
@@ -89,14 +91,14 @@ function HomePage() {
                         <div className="testimonial-header">
                             <div className="author-pfp"></div>
                             <div className="author">
-                                <div className="author-rating"><img src={imgStars}/></div>
-                                <div className="author-name">John Doe</div>
-                                <div className="author-job">Team Agent</div>
+                                <div className="author-rating"><img src={imgStars} alt="Stars that represent rating for Raavi Resort in a testimonial"/></div>
+                                <div className="author-name">Dhruv Janjua</div>
+                                <div className="author-job">Concert</div>
                             </div>
                         </div>
                         <div className="testimonial-content">
                             <p>
-                            Epsilon has always bent over backwards to meet the needs of my business requirements, no matter how different or complex they may be. They are definitely a preferred vendor for my needs.
+                            Very good place for variety of events in our town. Spacious than other resorts. Pricing is fair and access is easy as it is on National Highway. I visted here for Matser Saleem&apos;s show. It was quite enjoyable.
                             </p>
                         </div>
                     </div>
@@ -105,14 +107,14 @@ function HomePage() {
                         <div className="testimonial-header">
                             <div className="author-pfp"></div>
                             <div className="author">
-                                <div className="author-rating"><img src={imgStars}/></div>
-                                <div className="author-name">John Doe</div>
-                                <div className="author-job">Team Agent</div>
+                                <div className="author-rating"><img src={imgStars} alt="Stars that represent rating for Raavi Resort in a testimonial"/></div>
+                                <div className="author-name">Vinod Kumar</div>
+                                <div className="author-job">Family Function</div>
                             </div>
                         </div>
                         <div className="testimonial-content">
                             <p>
-                            Epsilon has always bent over backwards to meet the needs of my business requirements, no matter how different or complex they may be. They are definitely a preferred vendor for my needs.
+                            Basically still a maturing business, Raavi is heading in the right direction. Used as marriage palace because the lawn is spacious and catering was on point. Easily accessible on Dinanagar bypass.
                             </p>
                         </div>
                     </div>

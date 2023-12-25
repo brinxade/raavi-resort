@@ -45,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 0;
     margin-bottom: 10px;
     font-family: $font-secondary;
+    line-height: 1.2;
 }
 
 hr { border: 0.5px solid $primary; border-radius: $ui-radius-large; }
@@ -52,7 +53,7 @@ hr { border: 0.5px solid $primary; border-radius: $ui-radius-large; }
 /* Helpers */
 .padding-l { padding: $padding-l; }
 .base-padding { padding: $base-padding; }
-.section { margin-top: 150px; margin-bottom: 150px; }
+.section { margin-top: 100px; margin-bottom: 100px; }
 
 .ss-1 { max-width: $screen-size-small; margin-left: auto; margin-right: auto; }
 .ss-2 { max-width: $screen-size-medium; margin-left: auto; margin-right: auto; }
@@ -98,7 +99,7 @@ hr { border: 0.5px solid $primary; border-radius: $ui-radius-large; }
 
 /* Major Layouts */
 .grid-span2 { grid-column: span 2; }
-
+.flex { display: flex; align-items: center; }
 .flex-apart { display: flex; justify-content: space-between; align-items: center; }
 .flex-stretch { align-items: stretch !important; }
 .flex-column { display: flex; flex-direction: column; justify-content: flex-start; }

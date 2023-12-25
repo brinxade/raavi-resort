@@ -11,7 +11,7 @@ function BookingPage() {
 
     return (
         <div className="page page-booking">
-            <section className="section ss-3 padding-l">
+            <section className="ss-3 base-padding">
                 <h3 className="subtitle text-faded">Book Raavi Resort</h3>
                 <h1 className="title">Booking Details</h1>
             
@@ -20,8 +20,7 @@ function BookingPage() {
                 </p>
 
                 <p className="text-faded">
-                    Please use <Link to="/contact" className="link">the contact form </Link>
-                    for any other general inquiries.
+                    Please use <Link to="/contact" className="link">the contact form</Link> for any other general inquiries.
                 </p>
 
                 <hr className="mt-5"/>
@@ -86,7 +85,7 @@ function BookingPage() {
                     </div>
 
                     <div className="image-wrapper">
-                        <img src={imgHero}/>
+                        <img src={imgHero} alt="A lady with baloons, in a party"/>
                     </div>
                 </div>
             
