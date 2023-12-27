@@ -108,6 +108,12 @@
     background-color: #222;
     margin-top: 120px;
 
+    .logo {
+        display: block;
+        margin-bottom: 20px;
+        margin-top: 30px;
+    }
+
     .upper {
         max-width: $screen-size-large;
         margin: 0 auto;
@@ -136,6 +142,21 @@
         }
     }
 
+    address {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        color: #ccc;
+        font-size: $text-s;
+    }
+
+    .site-identity {
+        color: $primary;
+        border-top: 1px solid #555;
+    
+        nav { display: flex; gap: 15px; }
+    }
 }
 
 #subscribe-newsletter {
@@ -154,6 +175,8 @@
         margin: -30px 0 -40px 15px !important;
     }
 
+    .button-status { padding: 10px 0; }
+
     .input-wrapper {
         position: relative;
 
@@ -170,6 +193,9 @@
             cursor: pointer;
 
             &:hover { color: darken($primary, 10%); }
+            &.button-loading {
+                padding: 14px;
+            }
         }
     }
 
