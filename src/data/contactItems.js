@@ -1,6 +1,6 @@
 const contactItems = [
     {
-        value: "+91 99999 55555",
+        value: "+91 89274 70006",
         icon: "fa-solid fa-phone"
     },
     {

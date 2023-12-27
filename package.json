@@ -7,6 +7,12 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^14.5.1",
+    "concurrently": "^8.2.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.3",
+    "nodemailer": "^6.9.7",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.2",
@@ -16,7 +22,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"react-scripts start\" \"node api/server.js\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

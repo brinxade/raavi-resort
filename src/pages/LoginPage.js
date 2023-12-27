@@ -1,5 +1,5 @@
 import HoverStateIcon from "components/HoverStateIcon";
-import config from "config";
+import config from "appConfig";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 

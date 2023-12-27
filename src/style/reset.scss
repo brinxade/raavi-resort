@@ -54,6 +54,7 @@ hr { border: 0.5px solid $primary; border-radius: $ui-radius-large; }
 .padding-l { padding: $padding-l; }
 .base-padding { padding: $base-padding; }
 .section { margin-top: 100px; margin-bottom: 100px; }
+.section:last-child { margin-bottom: 0; }
 
 .ss-1 { max-width: $screen-size-small; margin-left: auto; margin-right: auto; }
 .ss-2 { max-width: $screen-size-medium; margin-left: auto; margin-right: auto; }
@@ -70,6 +71,12 @@ hr { border: 0.5px solid $primary; border-radius: $ui-radius-large; }
 .mt-3 { margin-top: 20px; }
 .mt-4 { margin-top: 25px; }
 .mt-5 { margin-top: 50px; }
+
+.mr-1 { margin-right: 10px; }
+.mr-2 { margin-right: 15px; }
+.mr-3 { margin-right: 20px; }
+.mr-4 { margin-right: 25px; }
+.mr-5 { margin-right: 50px; }
 
 .mb-1 { margin-bottom: 10px; }
 .mb-2 { margin-bottom: 15px; }
