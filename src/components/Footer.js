@@ -1,6 +1,7 @@
 import imgEnvelope from "images/envelope.svg";
 import logo from "images/logo.png";
 import { Link } from "react-router-dom";
+import imgSend from "images/icon-send.svg";
 
 function Footer() {
     return (
@@ -12,7 +13,10 @@ function Footer() {
                         <p className="mb-3">
                             Stay tuned with Raavi by subscribing to our email list - bringing you news about seasonal discounts, venue updates and more!
                         </p>
-                        <input type="email" placeholder="Your Email"/>
+                        <div className="input-wrapper">
+                            <input type="email" placeholder="Your Email"/>
+                            <button><i className="fa-solid fa-paper-plane-top"></i></button>
+                        </div>
                     </div>
                     <div className="thumbnail-wrapper">
                         <img src={imgEnvelope} alt=""/>
