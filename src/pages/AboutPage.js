@@ -7,7 +7,7 @@ import iconTree from "images/icon-tree.png";
 function AboutPage() {
 
     useEffect(() => {
-        document.title = `${config.titlePrefix} Booking`;
+        document.title = `${config.titlePrefix} About Raavi`;
     }, []);
 
     return (
