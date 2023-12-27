@@ -99,7 +99,7 @@
 .link { font-weight: bold; color: $primary; }
 
 /* Inputs */
-input[type='text'], input[type='email'], input[type='date'], input[type='password'], select, textarea { font-size: 16px; background-color: rgba(0, 0, 0, 0.075); border-radius: 10px; border: 2px solid transparent; outline: none; padding: 10px; width: 100%; min-width: 270px; font-weight: bold; }
+input[type='text'], input[type='email'], input[type='date'], input[type='password'], select, textarea { font-size: 16px; background-color: rgba(0, 0, 0, 0.075); border-radius: 10px; border: 2px solid transparent; outline: none; padding: 10px; width: 100%; min-width: 150px; font-weight: bold; }
 input[type='text']:focus, input[type='email']:focus, input[type='date']:focus, input[type='password']:focus, select:focus, textarea:focus { border-color: $primary; }
 input[type='text']::placeholder, input[type='email']::placeholder, input[type='date']::placeholder, input[type='password']::placeholder, select::placeholder, textarea::placeholder { color: rgba(0, 0, 0, 0.3); }
 
