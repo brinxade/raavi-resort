@@ -36,7 +36,7 @@ function Footer() {
                     </nav>
 
                     <nav className="social-tray ml-auto">
-                        <a href="https://www.instagram.com/raavi_raffles_resort/" className="icon-wrapper"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/raavi_raffles_resort/" className="icon-wrapper"><i className="fa-brands fa-instagram"></i></a>
                     </nav>
                 </div>
             </div>
