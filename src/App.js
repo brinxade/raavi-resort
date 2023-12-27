@@ -9,6 +9,7 @@ import ServicesPage from 'pages/ServicesPage';
 import CookiePolicyPage from 'pages/CookiePolicyPage';
 import PrivacyPolicyPage from 'pages/PrivacyPolicyPage';
 import ContactPage from 'pages/ContactPage';
+import BlankLayout from 'layouts/BlankLayout';
 
 function App() {
 
@@ -30,6 +31,8 @@ function App() {
 
 				<Route path="/policy/cookies" element={<AppLayout><CookiePolicyPage/></AppLayout>}></Route>
 				<Route path="/policy/privacy" element={<AppLayout><PrivacyPolicyPage/></AppLayout>}></Route>
+
+				<Route path="*"><BlankLayout><h1>Error 404</h1></BlankLayout></Route>
 			</Routes>
 		</div>
 	)
