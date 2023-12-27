@@ -1,4 +1,4 @@
-import config from "config";
+import config from "appConfig";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import imgStars from "images/stars.png";
@@ -27,7 +27,7 @@ function HomePage() {
 
                         <br/>
 
-                        <Link to="/" className="button button-primary mt-2">Celebrate happiness at Raavi</Link>
+                        <Link to="/booking" className="button button-primary mt-2">Celebrate Happiness at Raavi</Link>
                     </div>
                 </div>
 
@@ -49,10 +49,6 @@ function HomePage() {
                             <p>
                                 Welcome to Raavi Resort, where every moment blossoms into bliss and happiness. Our Indian-style venue is ideal for parties, weddings, and traditional family events. Experience the joy of seamless celebrations in our scenic indoor and outdoor spaces. Let us turn your events into unforgettable memories. 
                             </p>
-
-                            <br/>
-
-                            <Link to="/" className="button button-primary mt-2">Celebrate happiness at Raavi</Link>
                         </div>
                     </div>
 
@@ -66,10 +62,6 @@ function HomePage() {
                             <p>
                                 Welcome to Raavi Resort, where every moment blossoms into bliss and happiness. Our Indian-style venue is ideal for parties, weddings, and traditional family events. Experience the joy of seamless celebrations in our scenic indoor and outdoor spaces. Let us turn your events into unforgettable memories. 
                             </p>
-
-                            <br/>
-
-                            <Link to="/" className="button button-primary mt-2">Celebrate happiness at Raavi</Link>
                         </div>
                     </div>
                 </div>

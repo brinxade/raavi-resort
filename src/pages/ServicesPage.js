@@ -1,4 +1,4 @@
-import config from "config";
+import config from "appConfig";
 import { useEffect } from "react";
 import serviceData from "data/services.js";
 
