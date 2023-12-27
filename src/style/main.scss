@@ -15,14 +15,6 @@
     color: $white;
     font-size: $text-l;
     font-family: $font-secondary;
-    
-    &.menu-collapsed .nav-right {
-        display: none;
-    }
-
-    &.menu-collapsed .nav-left {
-        display: none;
-    }
 
     .logo {
         margin-right: 50px;
@@ -32,7 +24,9 @@
         margin-bottom: 30px; 
         > .inner { transform: translateY(14px); }
     }
+    
     &.header-transparent { background-color: transparent; transform: translateY(30%); }
+    &:not(.header-transparent).header-responsive .nav-right { padding-bottom: 50px; }
 
     .header-ext {
         background-color: $white;
@@ -67,8 +61,23 @@
     }
 }
 
+.header-responsive {
+    #header-toggle {
+        display: block;
+    }
+
+    &.menu-collapsed .nav-right {
+        display: none;
+    }
+
+    &.menu-collapsed .nav-left {
+        display: none;
+    }
+}
+
 #header-toggle {
     position: absolute;
+    display: none;
     right: 0;
     top: 0;
     font-size: 26px;
@@ -412,8 +421,11 @@
         margin-top: 0;
     }
 
+    .grid-span2 { grid-column: span 1;}
+
     #booking-form .inner {
         max-width: 100%;
+        grid-template-columns: 1fr;
     }
 
     .fieldgroup:last-child {
@@ -422,6 +434,10 @@
 
     form {
         margin-bottom: 20px;
+
+        .button-secondary {
+            width: 100%;
+        }
     }
 
     .block-list {
@@ -444,7 +460,8 @@
 
     #subscribe-newsletter {
         flex-direction: column-reverse;
-        align-items: start;
+        align-items: center;
+        text-align: center;
 
         .thumbnail-wrapper img {
             margin-left: 0 !important;
@@ -455,5 +472,43 @@
     .icon-box-container {
         flex-direction: column;
         align-items: center;
+    }
+
+    #events-showcase .image-content > .image-wrapper {
+        max-width: 100%;
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .page-home .hero-section {
+        margin-bottom: 0;
+    }
+
+    #site-footer .lower > .inner .logo {
+        margin-right: 20px;
+    }
+    
+    #site-footer .logo img {
+        max-width: 100px;
+    }
+
+    form .button-submit { margin-right: 0; }
+}
+
+@media screen and (max-width: 1000px) {
+    .services-showcase {
+        grid-template-columns: 1fr;
+
+        .image-content {
+            flex-direction: column;
+
+            .image { max-width: 100%; width: 100%; }
+            img { max-width: 100%; width: 100%; height: auto; border-radius: 10px; }
+        }
+    }
+
+    .page-booking .image-content {
+        flex-direction: column-reverse !important;
+        .image-wrapper { margin-top: 20px; }
     }
 }
